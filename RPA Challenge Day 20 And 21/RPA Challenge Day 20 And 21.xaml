@@ -1,0 +1,275 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="RPA_Challenge_Day_20_And_21" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="688,3298" sap2010:WorkflowViewState.IdRef="RPA_Challenge_Day_20_And_21_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="32">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="22">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="RPA_Challenge_Day_20_And_21" sap:VirtualizedContainerService.HintSize="476,3133" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:GenericValue" Name="BharatInvoice" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="BharatDate" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="BharatAddress" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="WebHostInvoice" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="WebHostDate" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="WebHostAddress" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtInvoice" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" Text="{x:Null}" DisplayName="Read PDF Text" FileName="C:\Users\user\Downloads\BharatElectricals.pdf" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" />
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'editable text'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+      <ui:GetValue.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="44f20121-5455-49f1-8a3c-5cae4370665c" InformativeScreenshot="cd6071864dce5fc10f07d3482cc7808b" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='BharatElectricals.pdf - Adobe Acrobat Reader DC' /&gt;&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='2' role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetValue.Target>
+      <ui:GetValue.Value>
+        <OutArgument x:TypeArguments="ui:GenericValue">[BharatInvoice]</OutArgument>
+      </ui:GetValue.Value>
+    </ui:GetValue>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[BharatInvoice]" />
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'editable text'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+      <ui:GetValue.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="59f6caf8-c707-41b5-997a-0aefc25fe9bc" InformativeScreenshot="80cbf22a92ad9985f4c41b7bbd17af45" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='BharatElectricals.pdf - Adobe Acrobat Reader DC' /&gt;&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='1' role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetValue.Target>
+      <ui:GetValue.Value>
+        <OutArgument x:TypeArguments="ui:GenericValue">[BharatDate]</OutArgument>
+      </ui:GetValue.Value>
+    </ui:GetValue>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[BharatDate]" />
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'editable text'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="GetValue_3">
+      <ui:GetValue.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="16d8da41-d4f3-4089-b585-69201b702b0e" InformativeScreenshot="138929d8b5ed13a4557b47ee9c77bb2e" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='BharatElectricals.pdf - Adobe Acrobat Reader DC' /&gt;&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl idx='3' role='editable text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetValue.Target>
+      <ui:GetValue.Value>
+        <OutArgument x:TypeArguments="ui:GenericValue">[BharatAddress]</OutArgument>
+      </ui:GetValue.Value>
+    </ui:GetValue>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[BharatAddress]" />
+    <ui:ReadPDFText PreserveFormatting="{x:Null}" Text="{x:Null}" DisplayName="Read PDF Text" FileName="C:\Users\user\Downloads\WebHostLimited.pdf" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="ReadPDFText_2" Range="All" />
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'text  Invoice #38645'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="GetValue_4">
+      <ui:GetValue.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="49a6e924-f8a5-4301-beab-70720db2ee92" InformativeScreenshot="d4cfa559d8c78914e4b1826076e9a54b" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='WebHostLimited.pdf - Adobe Acrobat Reader DC' /&gt;&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Invoice #38645   ' role='text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetValue.Target>
+      <ui:GetValue.Value>
+        <OutArgument x:TypeArguments="ui:GenericValue">[WebHostInvoice]</OutArgument>
+      </ui:GetValue.Value>
+    </ui:GetValue>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[WebHostInvoice]" />
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'text Invoice'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="GetValue_5">
+      <ui:GetValue.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cc4aafdd-7b70-4ae7-bd7b-e39b9813c587" InformativeScreenshot="9c3589f1cf68f8db82cfbd27e73ffc2e" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='WebHostLimited.pdf - Adobe Acrobat Reader DC' /&gt;&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Invoice Date: 21st Sep 2016   Due Date: 28th Sep 2016   ' role='text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetValue.Target>
+      <ui:GetValue.Value>
+        <OutArgument x:TypeArguments="ui:GenericValue">[WebHostDate]</OutArgument>
+      </ui:GetValue.Value>
+    </ui:GetValue>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[WebHostDate]" />
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'document'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="GetValue_6">
+      <ui:GetValue.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9b4a1cb9-7916-4a43-ad00-ce2d7b922e42" InformativeScreenshot="9834a2495c93fb29b5e5a95792a1c3e9" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='WebHostLimited.pdf - Adobe Acrobat Reader DC' /&gt;&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='Some Company LTD - Robotic Automations   ' role='text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetValue.Target>
+      <ui:GetValue.Value>
+        <OutArgument x:TypeArguments="ui:GenericValue">[WebHostAddress]</OutArgument>
+      </ui:GetValue.Value>
+    </ui:GetValue>
+    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'text 3216'" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="GetValue_7">
+      <ui:GetValue.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3189d3de-ee1e-4d8a-a8e2-e9c36682b18c" InformativeScreenshot="e76254d70b10e71905837ce6ffaa4e52" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='WebHostLimited.pdf - Adobe Acrobat Reader DC' /&gt;&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;&lt;ctrl name='3216 Maple Court, California, MO 63101   USA   ' role='text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:GetValue.Target>
+      <ui:GetValue.Value>
+        <OutArgument x:TypeArguments="ui:GenericValue">[WebHostAddress]</OutArgument>
+      </ui:GetValue.Value>
+    </ui:GetValue>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[WebHostAddress]" />
+    <ui:BuildDataTable DataTable="[dtInvoice]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Invoice_x0020_Number&quot; msdata:DataType=&quot;UiPath.Core.GenericValue, UiPath.System.Activities, Version=20.6.1.0, Culture=neutral, PublicKeyToken=null&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Date&quot; msdata:DataType=&quot;UiPath.Core.GenericValue, UiPath.System.Activities, Version=20.6.1.0, Culture=neutral, PublicKeyToken=null&quot; msdata:Caption=&quot;&quot; type=&quot;xs:anyType&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Billing_x0020_Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName /&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[dtInvoice]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="434,800" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,652" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[row.Item("Invoice Number")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[BharatInvoice]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[row.Item("Date")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[BharatDate]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[row.Item("Billing Address")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[BharatAddress]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[row.Item("Invoice Number")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[WebHostInvoice]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[row.Item("Date")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[WebHostDate]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[row.Item("Billing Address")]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[WebHostAddress]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="C:\Users\user\Desktop\Invoice.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelWriteRange AddHeaders="False" DataTable="[dtInvoice]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="A2" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+  </Sequence>
+</Activity>
