@@ -1,0 +1,323 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="RPA_Challenge_Day_24_And_25" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="688,7947" sap2010:WorkflowViewState.IdRef="RPA_Challenge_Day_24_And_25_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="66">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="42">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="RPA_Challenge_Day_24_And_25" sap:VirtualizedContainerService.HintSize="552,7782" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:GenericValue" Name="D1" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="D2" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="D3" />
+      <Variable x:TypeArguments="x:String" Name="A1" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="E3" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="E1" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="E2" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="S3" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="S2" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="S1" />
+      <Variable x:TypeArguments="x:String" Name="A2" />
+      <Variable x:TypeArguments="x:String" Name="A3" />
+      <Variable x:TypeArguments="x:String" Name="AN1" />
+      <Variable x:TypeArguments="x:String" Name="AN2" />
+      <Variable x:TypeArguments="x:String" Name="AN3" />
+      <Variable x:TypeArguments="x:String" Name="C1" />
+      <Variable x:TypeArguments="x:String" Name="C2" />
+      <Variable x:TypeArguments="x:String" Name="C3" />
+      <Variable x:TypeArguments="x:String" Name="J1" />
+      <Variable x:TypeArguments="x:String" Name="J2" />
+      <Variable x:TypeArguments="x:String" Name="J3" />
+      <Variable x:TypeArguments="x:String" Name="StrPassword" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="510,2240" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="C:\Users\user\Desktop\Employee 2020.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="376,2131" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelReadCell Cell="A2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_4" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[D1]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="A3" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_5" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[D2]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="A4" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_6" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[D3]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="B2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_7" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[A1]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="B3" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_8" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[A2]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="B4" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_9" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[A3]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="C2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_10" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[AN1]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="C3" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_11" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[AN2]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="C4" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_12" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[AN3]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="D2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_13" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[C1]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="D3" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_14" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[C2]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="D4" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_15" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[C3]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="E2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_16" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[J1]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="E3" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_17" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[J2]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="E4" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_18" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="x:String">[J3]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="F2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_19" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[S1]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="F3" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_20" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[S2]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="F4" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_21" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[S3]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="G2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_22" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[E1]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="G3" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_23" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[E2]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+            <ui:ExcelReadCell Cell="G4" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_24" SheetName="Sheet1">
+              <ui:ExcelReadCell.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[E3]</OutArgument>
+              </ui:ExcelReadCell.Result>
+            </ui:ExcelReadCell>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="C:\Users\user\Desktop\MuthuramAppointment Letter.docx" sap:VirtualizedContainerService.HintSize="510,1373" sap2010:WorkflowViewState.IdRef="WordApplicationScope_2">
+      <p:WordApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WordDocument">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1264" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_4" Replace="[D1]" ReplaceAll="True" Search="%[Date]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_5" Replace="[A1]" ReplaceAll="True" Search="%[Address]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_6" Replace="[AN1]" ReplaceAll="True" Search="%[Applicant Name]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_7" Replace="[C1]" ReplaceAll="True" Search="%[Company Name]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_8" Replace="[J1]" ReplaceAll="True" Search="%[Job Title]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_9" Replace="[S1]" ReplaceAll="True" Search="%[Starting Date]" />
+          </Sequence>
+        </ActivityAction>
+      </p:WordApplicationScope.Body>
+    </p:WordApplicationScope>
+    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="C:\Users\user\Desktop\SandeepAppointment Letter.docx" sap:VirtualizedContainerService.HintSize="510,1373" sap2010:WorkflowViewState.IdRef="WordApplicationScope_3">
+      <p:WordApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WordDocument">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1264" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_10" Replace="[D2]" ReplaceAll="True" Search="%[Date]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_11" Replace="[A2]" ReplaceAll="True" Search="%[Address]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_12" Replace="[AN2]" ReplaceAll="True" Search="%[Applicant Name]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_13" Replace="[C2]" ReplaceAll="True" Search="%[Company Name]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_14" Replace="[J2]" ReplaceAll="True" Search="%[Job Title]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_15" Replace="[S2]" ReplaceAll="True" Search="%[Starting Date]" />
+          </Sequence>
+        </ActivityAction>
+      </p:WordApplicationScope.Body>
+    </p:WordApplicationScope>
+    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="C:\Users\user\Desktop\JudeAppointment Letter.docx" sap:VirtualizedContainerService.HintSize="510,1373" sap2010:WorkflowViewState.IdRef="WordApplicationScope_4">
+      <p:WordApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WordDocument">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1264" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_16" Replace="[D3]" ReplaceAll="True" Search="%[Date]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_17" Replace="[A3]" ReplaceAll="True" Search="%[Address]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_18" Replace="[AN3]" ReplaceAll="True" Search="%[Applicant Name]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_19" Replace="[C3]" ReplaceAll="True" Search="%[Company Name]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_20" Replace="[J3]" ReplaceAll="True" Search="%[Job Title]" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="WordReplaceText_21" Replace="[S3]" ReplaceAll="True" Search="%[Starting Date]" />
+          </Sequence>
+        </ActivityAction>
+      </p:WordApplicationScope.Body>
+    </p:WordApplicationScope>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="510,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Appointment Form For Muthuram Saved Successfully&quot;]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="510,59" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Appointment Form For Sandeep Saved Successfully&quot;]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="510,59" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Appointment Form For Jude Saved Successfully&quot;]" />
+    <ui:GetPassword DisplayName="Get Password" sap:VirtualizedContainerService.HintSize="510,22" sap2010:WorkflowViewState.IdRef="GetPassword_1" ProtectedPassword="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAlPL2+vjYTUuemTBjnZnLqAAAAAACAAAAAAAQZgAAAAEAACAAAAAWu2U/hs6lNfV6mdqTbSKf2KF5Tg9Hu/o6jkOERkQrZAAAAAAOgAAAAAIAACAAAADSnnWyJwLZkBF6V+jwX3gPz5E/kHI++ACc9zJDdntsAiAAAAAkR8HXykwhHUwH2PGricP9yp6OVaPobnQNyGgVgg0XOEAAAAAFtqnNsPh48yQB3jrfaGSZgCHH3Fe9OUYyypTNmGBnRN2xSP0xG/dWV5cTTLt0gVvu3MOFr2tbBGmDEdtS5Q8C" Result="[StrPassword]" />
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="Client Details" DisplayName="Send SMTP Mail Message" Email="jenisonjoseph12@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="510,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="[StrPassword]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Client Details" To="judejenison912@gmail.com">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">C:\Users\user\Desktop\MuthuramAppointment Letter.docx</InArgument>
+        </scg:List>
+      </ui:SendMail.Files>
+    </ui:SendMail>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="510,59" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Appointment Form Mail For Muthuram Sent Successfully&quot;]" />
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="Client Details" DisplayName="Send SMTP Mail Message" Email="jenisonjoseph12@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="510,145" sap2010:WorkflowViewState.IdRef="SendMail_2" IsBodyHtml="False" Password="[StrPassword]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Client Details" To="judejenison912@gmail.com">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">C:\Users\user\Desktop\SandeepAppointment Letter.docx</InArgument>
+        </scg:List>
+      </ui:SendMail.Files>
+    </ui:SendMail>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="510,59" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Appointment Form Mail For Sandeep Sent Successfully&quot;]" />
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" TimeoutMS="{x:Null}" Body="Client Details" DisplayName="Send SMTP Mail Message" Email="jenisonjoseph12@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="510,145" sap2010:WorkflowViewState.IdRef="SendMail_3" IsBodyHtml="False" Password="[StrPassword]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Client Details" To="judejenison912@gmail.com">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">C:\Users\user\Desktop\JudeAppointment Letter.docx</InArgument>
+        </scg:List>
+      </ui:SendMail.Files>
+    </ui:SendMail>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="510,59" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;Appointment Form Mail For Jude Sent Successfully&quot;]" />
+  </Sequence>
+</Activity>
